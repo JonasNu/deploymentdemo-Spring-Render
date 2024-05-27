@@ -1,3 +1,5 @@
+package com.example.deploymentdemo;
+
 public class Results {
     private double calculatedOutput;
 
