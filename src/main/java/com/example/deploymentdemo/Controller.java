@@ -10,7 +10,7 @@ import com.example.deploymentdemo.Results;
 @RequestMapping
 public class Controller {
 
-    @GetMapping("/test")
+    @PostMapping("/test")
     public String test(){
         return "success";
     }
