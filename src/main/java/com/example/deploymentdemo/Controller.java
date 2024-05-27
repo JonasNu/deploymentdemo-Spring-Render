@@ -18,6 +18,7 @@ public class Controller {
     @GetMapping("/test2")
     @ResponseBody
     public Results getTestInt(){
+        System.out.print("Request recreived");
         return new Results(600);
     }
 }
