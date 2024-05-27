@@ -1,6 +1,6 @@
 package com.example.deploymentdemo;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,7 +15,7 @@ public class Controller {
         return "success";
     }
 
-    @GetMapping("/test2")
+    @PostMapping("/test2")
     @ResponseBody
     public Results getTestInt(){
         System.out.print("Request recreived");
