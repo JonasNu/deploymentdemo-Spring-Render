@@ -12,4 +12,12 @@ public class Controller {
     public String test(){
         return "success";
     }
+
+    @GetMapping("/test2")
+    @ResponseBody
+    public Results getTestInt(){
+        System.out.println("userData: ");
+        System.out.println(userData);
+        return new Results(600);
+    }
 }
